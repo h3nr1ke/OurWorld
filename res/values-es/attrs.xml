@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<string-array name="horizontal_position_options">
+		<item>Izquierda</item>
+		<item>Centro</item>
+		<item>Derecha</item>
+	</string-array>
+
+	<string-array name="vertical_position_options">
+		<item>Superior</item>
+		<item>Medio</item>
+		<item>Bajo</item>
+	</string-array>
+
+	<string-array name="rotation_direction_options">
+		<item>según las agujas del reloj</item>
+		<item>en sentido contrario</item>
+	</string-array>
+
+</resources>

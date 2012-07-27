@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:h3nr1ke="http://schemas.android.com/apk/res/com.h3nr1ke.livewallpaper.ourworld"
+	android:title="@string/wallpaper_settings" android:key="wallpaper_settings">
+
+<!--	<com.h3nr1ke.livewallpaper.ourworld.AdPreference-->
+<!--		android:layout="@layout/ad_layout" />-->
+
+	<PreferenceCategory android:title="@string/planet_category"
+		android:persistent="true" android:orderingFromXml="true">
+		<ListPreference android:key="horizontal_option"
+			android:title="@string/planet_vertical_position" android:summary="@string/planet_vertical_position_desc"
+			android:entries="@array/vertical_position_options"
+			android:entryValues="@array/horizontal_position_values"
+			android:defaultValue="20" />
+
+		<ListPreference android:key="vertical_option"
+			android:title="@string/planet_horizontal_position" android:summary="@string/planet_horizontal_position_desc"
+			android:entries="@array/horizontal_position_options"
+			android:entryValues="@array/vertical_position_values"
+			android:defaultValue="2" />
+
+		<ListPreference android:key="planet_rotation_direction"
+			android:title="@string/rotation_direction_title" android:summary="@string/rotation_direction_desc"
+			android:entries="@array/rotation_direction_options"
+			android:entryValues="@array/rotation_direction_values"
+			android:defaultValue="1" />
+
+		<com.h3nr1ke.livewallpaper.ourworld.SeekBarDialogPreference
+			android:key="planet_rotation_speed" h3nr1ke:minimumValue="1"
+			h3nr1ke:isFloat="false" h3nr1ke:maximumValue="10" h3nr1ke:stepSize="1"
+			h3nr1ke:units="" android:title="@string/rotation_speed_title"
+			android:summary="@string/rotation_speed_desc" h3nr1ke:defaultValue="1" />
+
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/background_category"
+		android:persistent="true" android:orderingFromXml="true">
+		<ListPreference android:key="background_rotation_direction"
+			android:title="@string/rotation_direction_title" android:summary="@string/rotation_direction_desc"
+			android:entries="@array/rotation_direction_options"
+			android:entryValues="@array/rotation_direction_values" android:defaultValue="1"/>
+
+		<com.h3nr1ke.livewallpaper.ourworld.SeekBarDialogPreference
+			android:key="background_rotation_speed" h3nr1ke:minimumValue="1"
+			h3nr1ke:isFloat="false" h3nr1ke:maximumValue="10" h3nr1ke:stepSize="1"
+			h3nr1ke:units="" android:title="@string/rotation_speed_title"
+			android:summary="@string/rotation_speed_desc" h3nr1ke:defaultValue="1" />
+
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/about_category"
+		android:persistent="true" android:orderingFromXml="true">
+		<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:h3nr1ke="http://schemas.android.com/apk/res/com.h3nr1ke.livewallpaper.ourworld"
+			android:title="@string/about_category" android:key="about_dialog">
+			<intent android:action="android.intent.action.VIEW"
+				android:targetPackage="com.h3nr1ke.livewallpaper.ourworld"
+				android:targetClass="com.h3nr1ke.livewallpaper.ourworld.About"
+				android:data="mydata" />
+		</PreferenceScreen>
+	</PreferenceCategory>
+
+</PreferenceScreen>

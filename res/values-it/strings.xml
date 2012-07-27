@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="wallpaper_description">Semplice mondo dell\'immagine LiveWallpaper rotazione</string>
+	<string name="wallpaper_settings">Semplice mondo dell\'immagine LiveWallpaper rotazione</string>
+	<string name="app_name">OurWorld</string>
+	<!-- Planet string settings -->
+	<string name="planet_category">Planet Impostazioni</string>
+	<string name="planet_horizontal_position">Posizione orizzontale</string>
+	<string name="planet_horizontal_position_desc">centro</string>
+
+	<string name="planet_vertical_position">Posizione verticale</string>
+	<string name="planet_vertical_position_desc">mezzo</string>
+
+	<!-- Background string settings -->
+	<string name="background_category">Impostazioni sfondo</string>
+
+	<!-- Commom -->
+	<string name="rotation_direction_title">senso di rotazione</string>
+	<string name="rotation_direction_desc">In senso orario</string>
+
+	<string name="rotation_speed_title">Velocità di rotazione</string>
+	<string name="rotation_speed_desc">1x</string>
+	
+	<!-- About -->
+	<string name="about_category">circa</string>
+	<string name="about_ok">Ok</string>
+	<string name="about_description">Sviluppato da Henrique Deodato h3nr1ke@gmail.com \n\n 
+	artistica di @apps_art@\n\n
+	Veda tutte le mie apps @apps@
+	\n
+	</string>
+</resources>

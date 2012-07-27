@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="wallpaper_description">Simple world image rotation livewallpaper</string>
+	<string name="wallpaper_settings">Simple world image rotation livewallpaper</string>
+	<!-- Planet string settings -->
+	<string name="planet_category">Configuración del planeta</string>
+	<string name="planet_horizontal_position">Posición horizontal</string>
+	<string name="planet_horizontal_position_desc">Centro</string>
+
+	<string name="planet_vertical_position">Posición vertical</string>
+	<string name="planet_vertical_position_desc">Medio</string>
+
+	<!-- Background string settings -->
+	<string name="background_category">Configuración de fondo</string>
+
+	<!-- Commom -->
+	<string name="rotation_direction_title">Sentido de giro</string>
+	<string name="rotation_direction_desc">según las agujas del reloj</string>
+
+	<string name="rotation_speed_title">velocidad de rotación</string>
+	<string name="rotation_speed_desc">1x</string>
+	
+	<!-- About -->
+	<string name="about_category">Sobre</string>
+	<string name="about_description">Desarrollado por Henrique Deodato h3nr1ke@gmail.com \n\n 
+	Arte por @apps_art@\n\n
+	Mire todas mis aplicaciones @apps@
+	\n
+	</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<string-array name="horizontal_position_options">
+		<item>Left</item>
+		<item>Center</item>
+		<item>Right</item>
+	</string-array>
+
+	<string-array name="horizontal_position_values">
+		<item>10</item>
+		<item>20</item>
+		<item>30</item>
+	</string-array>
+
+	<string-array name="vertical_position_options">
+		<item>Top</item>
+		<item>Middle</item>
+		<item>Bottom</item>
+	</string-array>
+
+	<string-array name="vertical_position_values">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+
+	<string-array name="rotation_direction_options">
+		<item>ClockWise</item>
+		<item>Counterclockwise</item>
+	</string-array>
+
+	<string-array name="rotation_direction_values">
+		<item>1</item>
+		<item>2</item>
+	</string-array>
+
+	<color name="white">#FFFFFF</color>
+
+	<declare-styleable name="SeekBarDialogPreference">
+		<attr name="maximumValue" format="integer" />
+		<attr name="minimumValue" format="integer" />
+		<attr name="stepSize" format="integer" />
+		<attr name="units" format="string" />
+		<attr name="isFloat" format="boolean" />
+		<attr name="defaultValue" format="integer" />
+	</declare-styleable>
+
+</resources>

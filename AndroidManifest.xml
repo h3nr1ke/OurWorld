@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.h3nr1ke.livewallpaper.ourworld" android:versionCode="5"
+	android:versionName="1.4" android:installLocation="preferExternal">
+
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+	<uses-sdk android:minSdkVersion="7" />
+
+	<uses-feature android:name="android.software.live_wallpaper" />
+
+	<application android:icon="@drawable/icon" android:label="@string/app_name"
+		android:enabled="true" android:debuggable="false">
+		<!-- Live Wallpaper Service -->
+		<service android:name="com.h3nr1ke.livewallpaper.ourworld.OurWorld"
+			android:icon="@drawable/icon" android:label="@string/app_name"
+			android:permission="android.permission.BIND_WALLPAPER">
+			<intent-filter>
+				<action android:name="android.service.wallpaper.WallpaperService" />
+			</intent-filter>
+			<meta-data android:name="android.service.wallpaper"
+				android:resource="@xml/wallpaper" />
+		</service>
+
+		<!-- Live Wallpaper Settings Activity -->
+		<activity android:label="@string/wallpaper_settings"
+			android:name="com.h3nr1ke.livewallpaper.ourworld.Settings"
+			android:theme="@android:style/Theme.WallpaperSettings"
+			android:exported="true">
+		</activity>
+
+		<!-- about activity -->
+		<activity android:name="About" android:label="@string/about_category"
+			android:theme="@android:style/Theme.Dialog"></activity>
+		<!-- Ad Activity -->
+		<activity android:name="com.google.ads.AdActivity"
+			android:configChanges="keyboard|keyboardHidden|orientation" />
+	</application>
+
+</manifest>

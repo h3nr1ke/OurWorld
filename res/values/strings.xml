@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="wallpaper_description">Simple world image rotation livewallpaper</string>
+	<string name="wallpaper_settings">Simple world image rotation livewallpaper</string>
+	<string name="app_name">OurWorld</string>
+	<!-- Planet string settings -->
+	<string name="planet_category">Planet Settings</string>
+	<string name="planet_horizontal_position">Horizontal Position</string>
+	<string name="planet_horizontal_position_desc">Center</string>
+
+	<string name="planet_vertical_position">Vertical Position</string>
+	<string name="planet_vertical_position_desc">Middle</string>
+
+	<!-- Background string settings -->
+	<string name="background_category">Background Settings</string>
+
+	<!-- Commom -->
+	<string name="rotation_direction_title">Rotation direction</string>
+	<string name="rotation_direction_desc">ClockWise</string>
+
+	<string name="rotation_speed_title">Rotation Speed</string>
+	<string name="rotation_speed_desc">1x</string>
+	
+	<!-- About -->
+	<string name="about_category">About</string>
+	<string name="about_ok">Ok</string>
+	<string name="about_description">Developed by Henrique Deodato h3nr1ke@gmail.com \n\n 
+	Art by @apps_art@\n\n
+	See all my apps @apps@
+	\n
+	</string>
+</resources>
