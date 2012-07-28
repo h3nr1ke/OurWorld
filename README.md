@@ -10,6 +10,6 @@ Art By
 ========
 http://www.bazaardesigns.com/5897-grunge-world-background/
 
-used in under CC atribution license
+used under CC atribution license
 
 Ready for AdMob
