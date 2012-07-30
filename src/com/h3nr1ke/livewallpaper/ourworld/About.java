@@ -29,7 +29,9 @@ public class About extends Activity implements OnClickListener {
 
 	public void onDestroy() {
 		// Destroy the AdView.
-		adView.destroy();
+		if (Constantes.ADD_AD) {
+			adView.destroy();
+		}
 
 		super.onDestroy();
 	}
@@ -58,20 +60,22 @@ public class About extends Activity implements OnClickListener {
 		textView.setText(Html.fromHtml(desc));
 		textView.setMovementMethod(LinkMovementMethod.getInstance());
 
-		// include the ad
-		LinearLayout adContainer = (LinearLayout) findViewById(R.id.adViewLayout);
-		// Create the adView
-		adView = new AdView(this, AdSize.BANNER, Constantes.AD_ID);
-
-		// include the ad inside a linear layout in the main.xml
-		adContainer.addView(adView);
-
-		// create the ad request conf
-		AdRequest request = new AdRequest();
-
-		//request.setTesting(true);
-
-		// load the ad
-		adView.loadAd(request);
+		if (Constantes.ADD_AD) {
+			// include the ad
+			LinearLayout adContainer = (LinearLayout) findViewById(R.id.adViewLayout);
+			// Create the adView
+			adView = new AdView(this, AdSize.BANNER, Constantes.AD_ID);
+	
+			// include the ad inside a linear layout in the main.xml
+			adContainer.addView(adView);
+	
+			// create the ad request conf
+			AdRequest request = new AdRequest();
+	
+			//request.setTesting(true);
+	
+			// load the ad
+			adView.loadAd(request);
+		}
 	}
 }
